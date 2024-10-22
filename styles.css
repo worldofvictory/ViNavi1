@@ -1,6 +1,6 @@
 .header {
     background-color: #bad1da;
-    padding: 20px 0;
+    padding: 40px 0;
     width: 100%;
     z-index: 3;
 }
@@ -10,22 +10,25 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    width: 100%;
 }
 
 .header-logo {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #333;
+    
 }
 
 .list-menu {
     display: flex;
     gap: 20px;
-    /* Відступи між елементами списку */
+    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
+    padding-left: 620px;
+    /* Додаємо відступ праворуч */
 }
 
 .list-header .list-link {
@@ -36,13 +39,20 @@
 
 .list-link:hover {
     color: white;
-    /* Наприклад, при наведенні змінюємо колір */
 }
 
 
 
+.nav-header {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
 
-
+.logo {
+    padding-left: 20px;
+    padding-top: 0px;
+}
 
 
 
@@ -70,11 +80,6 @@
     display: flex;
 }
 
-.nav-header {
-    display: flex;
-    align-items: center;
-    margin: 0;
-}
 
 .list-menu {
     display: none;
