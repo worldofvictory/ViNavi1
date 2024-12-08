@@ -2,8 +2,8 @@ body {
   font-family: "Merriweather", serif; /*Обрати шрифт з google-fonts*/
   font-weight: 400;
   font-style: normal;
+  background: #f9f7f4;
 }
-
 .header {
   background-color: #bad1da;
   padding: 40px 0;
@@ -125,6 +125,27 @@ body {
   line-height: 1;
   letter-spacing: -0.04em;
   color: #141414;
+}
+.steps-list {
+  list-style-type: none;
+  counter-reset: my-counter;
+}
+
+.steps-item::before {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  content: counter(my-counter);
+  counter-increment: my-counter;
+  color: #141414;
+  border-radius: 50%;
+  background: #03265c;
+  min-width: 46px;
+  height: 44px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
 }
 .contacts {
   font-size: 18px;
